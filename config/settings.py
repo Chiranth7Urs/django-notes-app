@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-^x5=@j-(v(n5s)suzy$za2x!)f*uf*1#oi_p82y7im-j31smx=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ALLOWED_HOSTS = [
+    'django-notes-app-vizh.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
+]
 
 
 # Application definition
