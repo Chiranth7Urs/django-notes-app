@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit</title>
+<style>
+body {font-family:Arial;background:#eef2f7;}
+.box {
+width:400px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+}
+input,textarea {
+width:100%;
+padding:10px;
+margin-top:10px;
+}
+button {
+background:#2196F3;
+color:white;
+padding:10px;
+width:100%;
+border:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Edit Note</h2>
+
+<form method="POST">
+{% csrf_token %}
+<input name="title" value="{{note.title}}">
+<textarea name="content">{{note.content}}</textarea>
+<button>Update</button>
+</form>
+
+</div>
+</body>
+</html>
